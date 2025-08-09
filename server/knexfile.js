@@ -1,7 +1,22 @@
-// For more information about this file see https://dove.feathersjs.com/guides/cli/databases.html
-import { app } from './src/app.js'
+import knex from 'knex';
+import dotenv from 'dotenv';
 
-// Load our database connection info from the app configuration
-const config = app.get('postgresql')
+dotenv.config();
 
-export default config
+const db = knex({
+  client: 'pg',
+  connection: {
+    connectionString: process.env.DATABASE_URL,
+    ssl: { rejectUnauthorized: false }
+  }
+});
+
+db.raw('SELECT 1')
+  .then(() => {
+    console.log('DB connection successful!');
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error('DB connection failed:', err);
+    process.exit(1);
+  });
