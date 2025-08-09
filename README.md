@@ -10,3 +10,14 @@ This is the backend server for the Tranzemo machine test project. It uses **Feat
 
 
 git clone https://github.com/afshan5225/tranzemo-test-backend.git
+
+
+## Go to the client folder:
+cd tranzemo-test-backend/client
+
+## Install dependencies 
+npm install
+
+### Run the project
+npm run dev
+
