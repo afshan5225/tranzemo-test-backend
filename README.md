@@ -13,11 +13,11 @@ git clone https://github.com/afshan5225/tranzemo-test-backend.git
 
 
 ## Go to the client folder:
-cd tranzemo-test-backend/client
+cd tranzemo-test-backend/server
 
 ## Install dependencies 
 npm install
 
 ### Run the project
-npm run dev
+npm start
 
