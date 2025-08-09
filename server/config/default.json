@@ -11,6 +11,7 @@
   },
   "postgresql": {
     "client": "pg",
-    "connection": "postgres://myuser:tiger@localhost:5432/feathersdb"
+    "connection": "postgres://feathersdb_user:aPrWyPOWZjbG7NNYkhd3iCYfm0PSzQXB@dpg-d2bd2fp5pdvs73cl34rg-a.oregon-postgres.render.com:5432/feathersdb"
+
   }
 }
